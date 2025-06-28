@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+<body>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="username">username:</label>
+        <input type="text" id = "username" placeholder="Spiderman" minlength="6" maxlength = "15" required><br>
+        
+        <label for="password">password:</label>
+        <input type="password" id="password" required><br>
+
+        <label for="email">email:</label>
+        <input type="email" id = "email" placeholder="Spiderman@gmail.com" required><br>
+
+        <label for="phone">phone #:</label>
+        <input type="tel" id = "phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id = "bday"><br>
+
+        <label for="quantity">quantity:</label>
+        <input type="number" id = "quantity" min = "0" max = "99" value="1"><br>
+
+        <!--Radio Buttons-->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." name="title" value="Ms.">
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." name="title" value="PhD."><br>
+
+        <!--Dropdown-->
+        <label for="payment">payment</label>
+        <select>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank">Bank Transfer</option>
+        </select><br>
+
+        <!--Checkbox-->
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <!--Textarea-->
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="25" placeholder="Enter your comment here..."></textarea><br>
+
+        <!--File Upload-->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" accept=".jpg, .jpeg, .png"><br>
+
+        <input type="submit"><br>
+        <input type="reset">
+    </form>
+</body>
+    
+</html>
