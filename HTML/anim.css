@@ -1,0 +1,17 @@
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+@keyframes slideLeft{
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
